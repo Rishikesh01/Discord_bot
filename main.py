@@ -13,5 +13,5 @@ for file in os.listdir("core"):
     if file.endswith(".py"):
         name = file[:-3]
         bot.load_extension(f"core.{name}")
-print(TOKEN)
+
 bot.run(TOKEN)
