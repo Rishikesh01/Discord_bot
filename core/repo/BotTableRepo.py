@@ -17,9 +17,7 @@ async def updateUser(user: str, RepPoints: int):
 
 async def findUser(user: str):
     try:
-        print("running findUser")
-        userDb = await BotTable().objects.get(userName=user)
-        print(userDb)
+        await BotTable().objects.get(userName=user)
     except orm.exceptions.NoMatch:
         return 1
 
