@@ -1,9 +1,7 @@
-import discord
-from discord import Member, User
 from discord.ext import commands
+from discord.ext.commands.errors import BadArgument, UserInputError
 
 from core.repo.BotTableRepo import checkingUser
-from discord.ext.commands.errors import BadArgument, UserInputError
 
 
 class RepBot(commands.Cog):
